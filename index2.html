@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="nome">
+            <button class="botao">Adicionar</button>
+        </div>
+
+        <script>
+           //var inputElement = document.getElementById('nome');
+           //var inputElement = document.getElementsByTagName('input');
+           //var inputElement = document.getElementsByClassName('nome');
+            //console.log(inputElement);
+
+            var btnElement = document.querySelector('button.botao');
+            var inputElement = document.querySelector('input[name=nome');
+           btnElement.onclick = function(){
+               var text = inputElement.value;
+               alert('Bem-vindo '+text);
+           }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input id = 'input'/>
+
+        </div>
+
+        <script>
+            var linkElement = document.createElement('a');
+
+            linkElement.setAttribute('href', 'https://www.google.com/');
+            linkElement.setAttribute('tittle', 'Site da Google');
+
+            var textElement = document.createTextNode('Acessar Google');
+            linkElement.appendChild(textElement);
+
+            var containerElement = document.getElementById('app');
+            var inputElement = document.querySelector('#input');
+            containerElement.appendChild(linkElement);
+            //containerElement.removeChild(inputElement);
+            
+        </script>
+    </body>
+</html>
